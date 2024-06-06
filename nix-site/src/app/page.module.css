@@ -228,3 +228,11 @@
     transform: rotate(0deg);
   }
 }
+
+.centerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80
+  vh; /* Full height to center vertically */
+}

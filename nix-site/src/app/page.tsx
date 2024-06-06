@@ -15,7 +15,8 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By the NIX team{" "}
+            {/*
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -24,11 +25,12 @@ export default function Home() {
               height={24}
               priority
             />
+            */}
           </a>
         </div>
       </div>
 
-      <div className={styles.center}>
+      {/*<div className={styles.center}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -37,6 +39,10 @@ export default function Home() {
           height={37}
           priority
         />
+          </div>*/}
+      
+      <div className={styles.centerHeader}>
+        <h1>Your Time, Your Rules<br />Welcome to NIX</h1>
       </div>
 
       <div className={styles.grid}>
@@ -47,9 +53,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            About NIX <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Find in-depth information about NIX features.</p>
         </a>
 
         <a
@@ -59,9 +65,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Why NIX <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Discover the amazing features of NIX that helps with time management.</p>
         </a>
 
         <a
@@ -71,9 +77,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
+            Meet the Team <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>Learn about the young women team behind this project.</p>
         </a>
 
         <a
@@ -83,10 +89,10 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Deploy <span>-&gt;</span>
+            Join US <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Sign up for your 30-day free trial of premium features.
           </p>
         </a>
       </div>
