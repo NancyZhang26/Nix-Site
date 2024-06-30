@@ -1,0 +1,101 @@
+.footer {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 20px 60px; /* Adjust padding to control spacing */
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 20px 400px; /* Adjust padding to control spacing */
+  /* top | right | bottom | left */
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 60px 20px 20px; /* Adjust padding to control spacing */
+}
+
+.nixCom {
+  color: #9fc4e8;
+  font-family: 'Roboto Mono', var(--default-font-family);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50.116px;
+  text-align: left;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #9fc4e8;
+  margin-bottom: 10px;
+}
+
+.teamInfo {
+  color: #000;
+  font-family: 'Nunito', var(--default-font-family);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 31.372px;
+  text-align: left;
+}
+
+.location {
+  color: #a4cfad;
+  font-family: 'Roboto Mono', var(--default-font-family);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #a4cfad;
+  margin-bottom: 10px;
+}
+
+.addressInfo {
+  color: #000;
+  font-family: 'Nunito', var(--default-font-family);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 31.372px;
+  text-align: left;
+}
+
+.contact {
+  color: #f8d851;
+  font-family: 'Roboto Mono', var(--default-font-family);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50.116px;
+  text-align: left;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #f8d851;
+  margin-bottom: 10px;
+}
+
+.contactInfo {
+  color: #000;
+  font-family: 'Nunito', var(--default-font-family);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 31.372px;
+  text-align: left;
+}

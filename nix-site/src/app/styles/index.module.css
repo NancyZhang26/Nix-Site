@@ -1,0 +1,114 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center top;  
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+}
+
+.heroContainer {
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+  height: 664px;
+  align-items: center;
+  background: none;
+}
+
+.wavesContainer {
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 0;
+  background: none;
+}
+
+.better {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 902px;
+  height: 93px;
+  margin: 50px 0 0 189px;
+  color: #9fc4e8;
+  font-family: Roboto Mono, var(--default-font-family);
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 93px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #9fc4e8;
+}
+
+.welcome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 738px;
+  height: 118px;
+  margin: -10px 0 0 271px;
+  color: #9fc4e8;
+  font-family: Roboto Mono, var(--default-font-family);
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 105.508px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #9fc4e8;
+}
+
+.text3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 440px;
+  height: 60px;
+  margin: 30px 0px 0px 420px;
+  color: #000000;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 35px;
+  text-align: center;
+  z-index: 9;
+}
+
+.button {
+  position: relative;
+  width: 238px;
+  height: 88px;
+  margin: 60px 0 0 510px;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-color: #9FC4E8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-top: 60px;
+  font-family: Nunito, var(--default-font-family);;
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #2e4d72;
+}

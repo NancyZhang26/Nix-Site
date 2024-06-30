@@ -12,15 +12,27 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/app/components/*"],
+      "@styles/*": ["src/app/styles/*"],
+      "@pages/*": ["src/pages/*"]
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Header.js", "src/app/components/Hero.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/components/**/*.ts",
+    "src/app/components/**/*.tsx",
+    "src/pages/**/*.ts",
+    "src/pages/**/*.tsx"
+  ],
   "exclude": ["node_modules"]
 }
