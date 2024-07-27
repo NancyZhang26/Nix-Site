@@ -26,7 +26,7 @@ const faq: React.FC = () => {
                     </div>
                     <div className={styles.frame}>
                         <div className={styles.imgWrapper}><Image src="/Images/faq-icons/q2Icon.png" alt="icon2" width={50} height={50} /></div>
-                        <p className={styles.Q2}>How does NIX help in reducing screen time?</p>
+                        <p className={styles.Q2}>How does NIX reduce screen time?</p>
                         <p className={styles.A2}>NIX uses structured solutions to break the cycle of excessive smartphone use. 
                             It provides users with tools and strategies to manage their time effectively, set goals, 
                             and track progress, ultimately reducing screen dependency.</p>
@@ -47,14 +47,14 @@ const faq: React.FC = () => {
                             Detailed privacy policies are available within the app.</p>
                     </div>
                     <div className={styles.frame}>
-                        <div className={styles.imgWrapper}><Image src="/Images/faq-icons/q5Icon.png" alt="icon5" width={50} height={80} /></div>
-                        <p className={styles.Q5}>Can I customize my experience with NIX?</p>
+                        <div className={styles.imgWrapper}><Image src="/Images/faq-icons/q5Icon.png" alt="icon5" width={50} height={50} /></div>
+                        <p className={styles.Q5}>Can I customize my experience?</p>
                         <p className={styles.A5}>Yes, NIX is highly customizable. Users can tailor their Pomodoro sessions, 
                             create personalized templates, and integrate their calendars to match their unique schedules and preferences.</p>
                     </div>
                     <div className={styles.frame}>
                         <div className={styles.imgWrapper}><Image src="/Images/faq-icons/q6Icon.png" alt="icon6" width={50} height={60} /></div>
-                        <p className={styles.Q6}>Where can I find support if I have issues with NIX?</p>
+                        <p className={styles.Q6}>Where can I find support?</p>
                         <p className={styles.A6}>For support, users can visit the NIX website or contact the customer service team through the app. 
                             There are also comprehensive FAQs and help guides available to assist users in resolving common issues.</p>
                     </div>

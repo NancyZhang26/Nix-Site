@@ -18,33 +18,23 @@ const meetTheTeam: React.FC = () => {
         <h1 className={styles.title}>Meet The Team!</h1>
         <div className={styles.items}>
           <Link href="/suLei" className={styles.item}>
-            <div className={styles.itemImage}>
-              <Image src="/Images/SuLei.png" alt="Su Lei Yadanar" width={225} height={225} />
-            </div>
+            <Image src="/Images/SuLei.png" alt="Su Lei Yadanar" width={225} height={225} className={styles.itemImage}/>
             <p>Su Lei Yadanar</p>
           </Link>
           <Link href="/zarah" className={styles.item}>
-            <div className={styles.itemImage}>
-              <Image src="/Images/Zahra.png" alt="Zarah Sadeq" width={225} height={225} />
-            </div>
+            <Image src="/Images/Zahra.png" alt="Zarah Sadeq" width={225} height={225} className={styles.itemImage}/>
             <p>Zarah Sadeq</p>
           </Link>
           <Link href="/grace" className={styles.item}>
-            <div className={styles.itemImage}>
-              <Image src="/Images/Grace.png" alt="Grace Yang" width={225} height={225} />
-            </div>
+            <Image src="/Images/Grace.png" alt="Grace Yang" width={225} height={225} className={styles.itemImage}/>
             <p>Grace Yang</p>
           </Link>
           <Link href="/nancy" className={styles.item}>
-            <div className={styles.itemImage}>
-              <Image src="/Images/Nancy.png" alt="Nancy Zhang" width={225} height={225} />
-            </div>
+            <Image src="/Images/Nancy.png" alt="Nancy Zhang" width={225} height={225} className={styles.itemImage}/>
             <p>Nancy Zhang</p>
           </Link>
           <Link href="/olive" className={styles.item}>
-            <div className={styles.itemImage}>
-              <Image src="/Images/Olive.png" alt="Olive Thin" width={225} height={225} />
-            </div>
+            <Image src="/Images/Olive.png" alt="Olive Thin" width={225} height={225} className={styles.itemImage}/>
             <p>Olive Thin</p>
           </Link>
         </div>

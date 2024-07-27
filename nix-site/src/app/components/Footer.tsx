@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '@styles/Footer.module.css';
-import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -25,6 +24,12 @@ const Footer: React.FC = () => {
           </span>
         </div>
         <div className={styles.section3}>
+          <span className={styles.socialMedia}>Social Media</span>
+          <span className={styles.contactInfo}>
+            Instagram <br />@nix_productivity
+          </span>
+        </div>
+        <div className={styles.section4}>
           <span className={styles.contact}>Contact</span>
           <span className={styles.contactInfo}>
             617-678-4891

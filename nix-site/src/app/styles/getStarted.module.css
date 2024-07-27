@@ -23,10 +23,10 @@
 
 .title {
   font-family: 'Roboto Mono', var(--default-font-family);
-  font-size: 50px;
-  color: #9fc4e8;
+  font-size: calc(2rem+2vw);
+  color: #000000;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 1px #9fc4e8;
+  -webkit-text-stroke: 1px #000000;
   margin-top: -5%;
   margin-bottom: 3%;
   text-align: center;
@@ -50,8 +50,8 @@
 }
 
 .circle {
-  width: 267px;
-  height: 267px;
+  width: 80% !important;
+  height: auto;
   background: rgba(128, 128, 128, 0.2);
   border-radius: 50%;
   display: flex;
@@ -62,7 +62,7 @@
 
 .sectionTitle {
   font-family: 'Nunito', var(--default-font-family);
-  font-size: 25px;
+  font-size: calc(1.5rem+1.5vw);
   font-weight: 700;
   color: #000;
   margin-bottom: 10px;
@@ -72,7 +72,7 @@
 .sectionDescription {
   font-family: 'Nunito', var(--default-font-family);
   color: #000;
-  font-size: 20px;
+  font-size: calc(1.3rem+1.3vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -83,11 +83,22 @@
 .scrollArrow {
   margin-top: 0%;
   cursor: pointer;
+  width: 12% !important;
+  height: aut0;
+  min-width: 80px;
 }
 
 .scrollArrow1 {
-  margin-top: 3%;
+  margin-top: 5%;
   cursor: pointer;
+  width: 12% !important;
+  height: aut0;
+  min-width: 80px;
+}
+
+.arrowWrapper {
+  align-items: center;
+  justify-items: center;
 }
 
 .page1, .page2, .page3, .page4, .page5, .page6 {
@@ -101,25 +112,25 @@
 .leftSection {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 
 .rightSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Ensure the right section takes half the width */
+  width: 40%; /* Ensure the right section takes half the width */
   flex-direction: row; /* Align children in a row */
   margin-left: 5%;
 }
 
 .title2, .title3, .title4 {
-  color: rgba(248, 216, 81, 0.70);
+  color: rgba(0, 0, 0, 1);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #F8D851;
   font-family: "Roboto Mono";
-  font-size: 60px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -129,7 +140,7 @@
 }
 
 .title5 {
-  color: #9FC4E8;
+  color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #9FC4E8;
@@ -385,16 +396,79 @@
 }
 
 /* Add transition effect to the arrows */
-.leftArrow, .rightArrow, .scrollArrow {
+.leftArrow, .rightArrow, .scrollArrow, .scrollArrow1 {
   transition: transform 0.2s ease;
 }
 
 /* Enlarge the arrows on hover */
-.leftArrow:hover, .rightArrow:hover, .scrollArrow:hover {
+.leftArrow:hover, .rightArrow:hover, .scrollArrow:hover, .scrollArrow1:hover{
   transform: scale(1.1);
 }
 
 /* Enlarge the arrows on active (click) */
-.leftArrow:active, .rightArrow:active, .scrollArrow:active {
+.leftArrow:active, .rightArrow:active, .scrollArrow:active, .scrollArrow1:active{
   transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .sections {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: calc(1rem+1vw);
+  }
+  .sections {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 10%;
+  }
+
+  .sections {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    margin: 5%;
+  }
+  
+  .title {
+    font-size: 23px;
+  }
+
+  .circle {
+    margin-bottom: 5%;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+  
+  .sectionDescription {
+    font-size: 18px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 10%;
+  }
 }

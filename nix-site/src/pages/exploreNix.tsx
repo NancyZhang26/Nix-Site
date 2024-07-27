@@ -23,9 +23,7 @@ const exploreNix: React.FC = () => {
                         well-being using advanced Screen Time reducing methodologies.</p>
                 </div>
                 <div className={styles.rightSection}>
-                    <div className={styles.imgWrapper}>
-                        <Image className={styles.babyLizard} src="/images/baby-lizard.png" alt="Baby lizard" width="442" height="461"/>
-                    </div>
+                    <Image className={styles.babyLizard} src="/images/baby-lizard.png" alt="Baby lizard" width="442" height="461"/>
                 </div>
             </main>
             <Link href="/menu" className={styles.buttonWrapper}>

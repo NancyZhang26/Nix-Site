@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background: none;
   background-size: cover;
   height: 100%;
@@ -15,8 +14,8 @@
   left: 5%;
   width: 45%; /* Adjust the width to cover the desired portion */
   height: 100%;
-  background: rgba(160, 196, 232, 0.35);; /* Green background with transparency */
-  z-index: 1; /* Ensure it stays above the background but below content */
+  background: rgba(160, 196, 232, 0.35); /* Green background with transparency */
+  z-index: 0; /* Ensure it stays above the background but below content */
 }
 
 .main {
@@ -24,7 +23,7 @@
   display: flex;
   flex-direction: row; /* Align left and right sections side by side */
   justify-content: space-between;
-  padding: 120px;
+  padding: 100px;
   margin-bottom: 0;
 }
 
@@ -37,8 +36,8 @@
   margin-top: 20px;
   width: 30%;
   height: 100%;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 3%;
+  padding-right: 5%;
 }
 
 .rightSection {
@@ -48,18 +47,18 @@
   align-items: flex-start;
   justify-content: center;
   background: none;
-  padding: 40px;
+  padding: 1%;
   border-radius: 10px;
   margin-left: 60px;
-  margin-right: 30px;
+
 }
 
 .Adventure {
   color: #9FC4E8;
   font-family: Roboto Mono, var(--default-font-family);
-  font-size: 55px;
+  font-size: calc(1.5rem + 2vw); /* Responsive font size */
   font-weight: 400;
-  line-height: 80px;
+  line-height: normal;
   text-align: left;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px #9FC4E8;
@@ -69,7 +68,7 @@
 .Ready {
   color: #000;
   font-family: Nunito;
-  font-size: 25px;
+  font-size: calc(1rem + 0.5vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -118,7 +117,7 @@
 .names {
   color: #000;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -127,7 +126,7 @@
 .Srequired {
   color: #777;
   font-family: Nunito;
-  font-size: 15px;
+  font-size: calc(0.8rem + 0.3vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -136,7 +135,7 @@
 .label {
   color: #000;
   font-family: Nunito;
-  font-size: 23px;
+  font-size: calc(1.1rem + 0.5vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -145,7 +144,7 @@
 .labelName {
   color: #000;
   font-family: Nunito;
-  font-size: 23px;
+  font-size: calc(1.1rem + 0.5vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -154,7 +153,7 @@
 .required {
   color: #777;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -163,7 +162,7 @@
 .input, .textarea {
   width: 100%;
   padding: 5px;
-  font-size: 18px;
+  font-size: calc(1rem + 0.4vw); /* Responsive font size */
   border: 1px solid #000000;
   border-radius: 16px;
   font-family: Nunito, var(--default-font-family);
@@ -178,7 +177,7 @@
 
 .submitButton {
   padding: 15px 20px;
-  font-size: 25px;
+  font-size: calc(1rem + 0.5vw); /* Responsive font size */
   font-family: Nunito, var(--default-font-family);
   color: #fff;
   border: none;
@@ -198,7 +197,7 @@
 
 .error {
   color: red;
-  font-size: 18px;
+  font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
   margin-top: 10px;
 }
 
@@ -206,7 +205,127 @@
   display: flex;
   align-items: center;
   font-family: Nunito, var(--default-font-family);
-  font-size: 18px;
+  font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
   color: #000;
   margin-top: 10px;
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+
+  .leftSection, .rightSection {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rightSection {
+    order: 1; /* Move the form above the text */
+  }
+
+  .Adventure {
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .Ready {
+    text-align: left;
+    font-size: 23px;
+  }
+
+  .container::before {
+    top: 11%; /* Adjust the top position as needed */
+    left: 0; /* Ensure it starts from the left */
+    width: 100%; /* Adjust the width to cover the desired portion */
+    height: 20%;
+  }
+  
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+  .main {
+    padding: 40px;
+  }
+
+  .container::before {
+    top: 8%; /* Adjust the top position as needed */
+    left: 0; /* Ensure it starts from the left */
+    width: 100%; /* Adjust the width to cover the desired portion */
+    height: 16%;
+  }
+
+  .Adventure {
+    font-size: calc(1.2rem + 1.2vw);
+
+  }
+
+  .Ready {
+    font-size: calc(1.2rem + 0.5vw);
+  }
+
+  .input, .textarea {
+    font-size: calc(0.8rem + 0.4vw);
+  }
+
+  .submitButton {
+    font-size: calc(0.9rem + 0.5vw);
+  }
+
+  .error, .checkboxLabel {
+    font-size: calc(0.8rem + 0.4vw);
+  }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 600px) {
+  .main {
+    padding: 30px;
+  }
+
+  .container::before {
+    top: 8%; /* Adjust the top position as needed */
+    left: 0; /* Ensure it starts from the left */
+    width: 100%; /* Adjust the width to cover the desired portion */
+    height: 18%;
+  }
+
+  .Adventure {
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .Ready {
+    font-size: calc(1rem + 0.4vw);
+    margin-top: -8%;
+  }
+
+  .input, .textarea {
+    font-size: calc(0.7rem + 0.3vw);
+  }
+
+  .submitButton {
+    font-size: calc(0.8rem + 0.5vw);
+  }
+
+  .error, .checkboxLabel {
+    font-size: calc(0.7rem + 0.3vw);
+  }
 }

@@ -1,29 +1,44 @@
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background: none;
-}
-
-.main {
+  }
+  
+  .main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
+  }
 
-.middleSection {
+  .whyNix, .leftSection, .rightSection, .backButton {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in forwards;
+}
+  
+  .middleSection {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: 2%;
     align-items: stretch; /* Ensure both sections stretch to the same height */
-}
-
-.leftSection, .rightSection {
+  }
+  
+  .leftSection, .rightSection {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -31,51 +46,54 @@
     justify-content: center;
     width: 50%;
     height: auto; /* Set to auto to let flexbox handle the height */
-}
-
-.leftSection {
+  }
+  
+  .leftSection {
     margin-left: 8%;
     margin-right: 4%;
-}
-
-.rightSection {
+    animation-delay: 0.3s;
+  }
+  
+  .rightSection {
     margin-right: 8%;
     margin-left: 4%;
-}
-
-.whyNix {
+    animation-delay: 0.6s;
+  }
+  
+  .whyNix {
     color: #9FC4E8;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #9FC4E8;
     font-family: "Roboto Mono";
-    font-size: 65px;
+    font-size: calc(2rem + 2vw); /* Responsive font size */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: -2%;
-}
-
-.frame {
+    margin-bottom: 2%;
+    animation-delay: 0s;
+  }
+  
+  .frame {
     border-radius: 20px;
     background: #D9D9D9;
-    width: 30%;
+    width: 150px;
     margin: 5%;
-}
-
-.text {
+  }
+  
+  .text {
     color: #000;
     font-family: Nunito;
-    font-size: 27px;
+    font-size: calc(1rem + 0.5vw); /* Responsive font size */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
     padding: 7%;
-}
-
-.button1, .button2, .button3, .button4, .button5, .button6 {
+  }
+  
+  .button1, .button2, .button3, .button4, .button5, .button6 {
     border-radius: 20px;
     border: 1px solid #000;
     display: flex;
@@ -88,50 +106,140 @@
     color: #000;
     text-align: center;
     font-family: Inter;
-    font-size: 28px;
+    font-size: 25px; /* Responsive font size */
     font-style: normal;
     font-weight: 200;
     line-height: normal;
     cursor: pointer;
     margin-bottom: 5%;
-}
-
-.button1 { background: linear-gradient(90deg, #F3C8C8 80%, #F2E9E9 100%); }
-.button2 { background: linear-gradient(90deg, #F3DDC8 80%, #F2E9E9 100%); }
-.button3 { background: linear-gradient(90deg, #F3F1C8 80%, #F2E9E9 100%); }
-.button4 { background: linear-gradient(90deg, #DBF3C8 80%, #F2E9E9 100%); }
-.button5 { background: linear-gradient(90deg, #C8F3D9 80%, #F2E9E9 100%); }
-.button6 { background: conic-gradient(from 90deg at 50% 50%, #ABABAB 172.79999613761902deg, #F2E9E9 237.60000944137573deg); }
-
-.buttonWrapper {
+  }
+  
+  .button1 { background: linear-gradient(90deg, #F3C8C8 80%, #F2E9E9 100%); }
+  .button2 { background: linear-gradient(90deg, #F3DDC8 80%, #F2E9E9 100%); }
+  .button3 { background: linear-gradient(90deg, #F3F1C8 80%, #F2E9E9 100%); }
+  .button4 { background: linear-gradient(90deg, #DBF3C8 80%, #F2E9E9 100%); }
+  .button5 { background: linear-gradient(90deg, #C8F3D9 80%, #F2E9E9 100%); }
+  .button6 { background: conic-gradient(from 90deg at 50% 50%, #ABABAB 172.79999613761902deg, #F2E9E9 237.60000944137573deg); }
+  
+  .buttonWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
-}
-
-.backButton {
+  }
+  
+  .backButton {
     background-color: #9FC4E8;
     color: #FFF;
-    width: 240px;
-    height: 80px;
+    width: calc(150px + 5vw); /* Responsive width */
+    height: calc(50px + 2vw); /* Responsive height */
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
     text-align: center;
     transition: background-color 0.3s;
     stroke-width: 1px;
     stroke: #9FC4E8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    text-align: center;
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: -1%;
-}
-
-.backButton:hover {
+    margin-top: 5%;
+    animation-delay: 0.6s;
+  }
+  
+  .backButton:hover {
     background-color: #2e4472;
-}
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 1024px) {
+    .middleSection {
+      flex-direction: row; /* Keep row direction */
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 1024px) {
+    .middleSection {
+      flex-direction: row; /* Keep row direction */
+      align-items: stretch; /* Stretch items */
+    }
+  }
+  
+  /* Small screens (large smartphones) */
+  @media (max-width: 768px) {
+    .main {
+      padding: 100px;
+    }
+  
+    .whyNix {
+      font-size: calc(1.7rem + 2vw);
+    }
+  
+    .middleSection {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+    }
+  
+    .leftSection,
+    .rightSection {
+      width: 80%; /* Adjust width for smaller screens */
+      margin: 10px 0; /* Add margin between sections */
+    }
+  
+    .frame {
+      width: 250px; /* Adjust frame width for smaller screens */
+      font-size: 100px;
+      margin: 5% 0;
+    }
+  
+    .button1,
+    .button2,
+    .button3,
+    .button4,
+    .button5,
+    .button6 {
+      width: 400px; /* Make buttons full width */
+      font-size: 25px;; /* Adjust font size */
+    }
+  }
+  
+  /* Extra small screens (small smartphones) */
+  @media (max-width: 600px) {
+    .main {
+      padding: 10% 5%;
+    }
+  
+    .whyNix {
+      font-size: calc(1.5rem + 1.5vw);
+    }
+  
+    .middleSection {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+    }
+  
+    .leftSection,
+    .rightSection {
+      width: 100%; /* Full width for extra small screens */
+      margin: 5px 0; /* Add margin between sections */
+    }
+  
+    .frame {
+      width: 180px; /* Adjust frame width for extra small screens */
+    }
+  
+    .button1,
+    .button2,
+    .button3,
+    .button4,
+    .button5,
+    .button6 {
+      width: 250px; /* Make buttons full width */
+      font-size: 20px; /* Adjust font size */
+    }
+  }
+  

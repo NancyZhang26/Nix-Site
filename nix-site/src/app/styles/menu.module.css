@@ -1,23 +1,37 @@
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background: none;
-  }
-  
+}
+
 .main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 120px;
+    padding: 80px;
 }
-  
+
+.title, .menuItem, .backButton {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in forwards;
+}
+
 .title {
-    font-size: 65px;
+    font-size: calc(2rem + 2vw); /* Responsive font size */
     color: #9FC4E8;
-    margin-top: -60px;
     margin-bottom: 40px;
     font-weight: 1000;
     text-align: center;
@@ -28,26 +42,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    animation-delay: 0s; /* Delay for staggered effect */
 }
-  
+
 .menuItems {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 40px;
+    width: 100%;
+    height: auto;
 }
-  
+
 .menuItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
+    margin: 25px;
     text-align: center;
+    flex: 1 1 25%; /* Flex grow and shrink with a base width */
+    max-width: 250px; /* Maximum width for larger screens */
+    animation-delay: 0.6s; /* Delay for staggered effect */
 }
-  
+
 .menuItemImage {
-    width: 250px;
-    height: 250px;
+    width: 100% !important; /* Override the default width */
+    height: auto !important; /* Maintain aspect ratio */
     border-radius: 50%;
     overflow: hidden;
     background-color: #fff;
@@ -56,27 +76,29 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    max-width: 250px;
+    min-width: 90px;
 }
-  
+
 .menuItem p {
     color: #000;
     text-align: center;
     font-family: Nunito;
-    font-size: 30px;
+    font-size: calc(1rem + 0.5vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-  
+
 .backButton {
     background-color: #9FC4E8;
     color: #FFF;
-    width: 240px;
-    height: 90px;
+    width: calc(150px + 5vw); /* Responsive width */
+    height: calc(50px + 2vw); /* Responsive height */
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
     margin-top: 40px;
     font-family: Nunito;
     text-align: center;
@@ -85,14 +107,112 @@
     stroke: #9FC4E8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
-    font-family: Nunito;
-    font-size: 29px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    animation-delay: 0.9s; /* Delay for staggered effect */
 }
-  
+
 .backButton:hover {
     background-color: #2e4472;
 }
-  
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .menuItems {
+        justify-content: space-around; /* Spread out items evenly */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .menuItems {
+        justify-content: space-around; /* Spread out items evenly */
+    }
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+    .main {
+        padding: 100px;
+    }
+
+    .title {
+        font-size: calc(1.7rem + 2vw);
+    }
+
+    .menuItems {
+        flex-direction: column; /* Stack items vertically */
+        align-items: left;
+        justify-content: space-around;
+    }
+
+    .menuItem {
+        flex-direction: row; /* Arrange items in a row */
+        align-items: left; /* Center items vertically */
+        max-width: 100%; /* Allow full width for small screens */
+        margin-bottom: 10px; /* Reduce spacing between menu items */
+    }
+
+    .menuItemImage {
+        width: 30% !important; /* Adjust image width for small screens */
+        margin-right: 15px; /* Space between image and text */
+    }
+
+    .menuItem p {
+        font-size: 23px; /* Adjust font size for small screens */
+        text-align: left; /* Align text to the left */
+    }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 600px) {
+    .main {
+        padding: 10% 5%;
+    }
+    
+    .title {
+        font-size: calc(2rem + 2vw);
+    }
+    
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        max-width: 100%;
+        height: auto;
+    }
+      
+    .menuItem {
+        display: flex;
+        flex-direction: row;
+        margin: 5%;
+        text-align: center;
+        flex: 1 1 25%; /* Flex grow and shrink with a base width */
+        max-width: 250px; /* Maximum width for larger screens */
+    }
+      
+    .menuItemImage {
+        width: 40% !important; /* Override the default width */
+        height: auto !important; /* Maintain aspect ratio */
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+      
+    .menuItem p {
+        color: #000;
+        text-align: left;
+        font-family: Nunito;
+        font-size: calc(1rem + 0.9vw);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

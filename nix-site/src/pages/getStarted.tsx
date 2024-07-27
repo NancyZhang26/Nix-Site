@@ -68,36 +68,34 @@ const getStarted: React.FC = () => {
         <div className={styles.page1}>
           <div className={styles.sections}>
             <div className={styles.section}>
-              <div className={styles.circle}>
-                <Image src="/images/get-started-icons/anxiousness.png" alt="Anxiousness Icon" width={267} height={267} />
-              </div>
+              <Image src="/images/get-started-icons/anxiousness.png" alt="Anxiousness Icon" width={267} height={267}
+              className={styles.circle}/>
               <h2 className={styles.sectionTitle}>Anxiousness:</h2>
-              <p className={styles.sectionDescription}>Feeling overwhelmed by your to-do list.</p>
+              <p className={styles.sectionDescription}>Worried about juggling assignments, exams, and social life?</p>
             </div>
             <div className={styles.section}>
-              <div className={styles.circle}>
-                <Image src="/images/get-started-icons/procrastination.png" alt="Procrastination Icon" width={267} height={267} />
-              </div>
+              <Image src="/images/get-started-icons/procrastination.png" alt="Procrastination Icon" width={267} height={267} 
+              className={styles.circle}/>
               <h2 className={styles.sectionTitle}>Procrastination:</h2>
-              <p className={styles.sectionDescription}>The urge to delay important tasks.</p>
+              <p className={styles.sectionDescription}>Putting off studying for that upcoming exam or finishing your project?</p>
             </div>
             <div className={styles.section}>
-              <div className={styles.circle}>
-                <Image src="/images/get-started-icons/no-progress.png" alt="No Progress Icon" width={267} height={267} />
-              </div>
+              <Image src="/images/get-started-icons/no-progress.png" alt="No Progress Icon" width={267} height={267} 
+              className={styles.circle}/>
               <h2 className={styles.sectionTitle}>No Progress:</h2>
-              <p className={styles.sectionDescription}>Struggling to see the results of your efforts.</p>
+              <p className={styles.sectionDescription}>Feeling stuck even after hours of studying and hard work?</p>
             </div>
           </div>
-          <div className={styles.scrollArrow1} onClick={() => scrollToPage(page2Ref)}>
-            <Image src="/images/arrows/blue-scroll-arrow-down.png" alt="Scroll Arrow" width={192} height={120} />
+          <div className={styles.arrowWrapper}>
+            <Image src="/images/arrows/blue-scroll-arrow-down.png" alt="Scroll Arrow" width={134} height={84} 
+              className={styles.scrollArrow1} onClick={() => scrollToPage(page2Ref)}/>
           </div>
         </div>
 
         <div className={styles.page2} ref={page2Ref}>
           <div className={styles.wrapper}>
             <div className={styles.leftSection}>
-              <h1 className={styles.title2}>Don't Worry! <br /> NIX Got You!</h1>
+              <h1 className={styles.title2}>Don't Worry! NIX Got You!</h1>
               <p className={styles.text2}>Yo, I am <span className={styles.text22}>Ignis the Lizard</span>
                 <br/> 
                 Let’s burn through procrastination and ignite your productivity!
@@ -123,8 +121,9 @@ const getStarted: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={styles.scrollArrow} onClick={() => scrollToPage(page3Ref)}>
-            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={192} height={120} />
+          <div className={styles.arrowWrapper}>
+            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={134} height={84} 
+              className={styles.scrollArrow} onClick={() => scrollToPage(page3Ref)}/>
           </div>
         </div>
 
@@ -157,8 +156,9 @@ const getStarted: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={styles.scrollArrow} onClick={() => scrollToPage(page4Ref)}>
-            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={192} height={120} />
+          <div className={styles.arrowWrapper}>
+            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={134} height={84}
+              className={styles.scrollArrow} onClick={() => scrollToPage(page4Ref)}/>
           </div>
         </div>
 
@@ -191,8 +191,9 @@ const getStarted: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={styles.scrollArrow} onClick={() => scrollToPage(page5Ref)}>
-            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={192} height={120} />
+          <div className={styles.arrowWrapper}>
+            <Image src="/images/arrows/yellow-scroll-arrow-down.png" alt="Scroll Arrow" width={134} height={84} 
+              className={styles.scrollArrow} onClick={() => scrollToPage(page5Ref)}/>
           </div>
         </div>
 
@@ -225,8 +226,9 @@ const getStarted: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={styles.scrollArrow} onClick={() => scrollToPage(page6Ref)}>
-            <Image src="/images/arrows/blue-scroll-arrow-down.png" alt="Scroll Arrow" width={192} height={120} />
+          <div className={styles.arrowWrapper}>
+            <Image src="/images/arrows/blue-scroll-arrow-down.png" alt="Scroll Arrow" width={134} height={84}
+            className={styles.scrollArrow} onClick={() => scrollToPage(page6Ref)} />
           </div>
         </div>
 
@@ -270,7 +272,7 @@ const getStarted: React.FC = () => {
               <div className={styles.price}>$150</div>
             </div>
           </div>
-          <h1 className={styles.slogan}>You Can Do Better!</h1>
+          <h1 className={styles.slogan}>You Can Do Better.</h1>
           <div className={styles.free}>It's Free!</div>
           <div className={styles.bottomSection}>
               <div className={styles.arrowContainer}>

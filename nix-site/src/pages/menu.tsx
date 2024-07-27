@@ -18,27 +18,23 @@ const Menu: React.FC = () => {
         <h1 className={styles.title}>Welcome To NIX!</h1>
         <div className={styles.menuItems}>
           <Link href="/exploreNix" className={styles.menuItem}>
-            <div className={styles.menuItemImage}>
-              <Image src="/Images/menu-icons/explore-nix.png" alt="Explore NIX" width={250} height={250} />
-            </div>
+            <Image src="/Images/menu-icons/explore-nix.png" alt="Explore NIX" width={250} height={250}
+            className={styles.menuItemImage}/>
             <p>Explore NIX</p>
           </Link>
           <Link href="/whyNix" className={styles.menuItem}>
-            <div className={styles.menuItemImage}>
-              <Image src="/Images/menu-icons/why-nix.png" alt="Why NIX" width={250} height={250} />
-            </div>
+            <Image src="/Images/menu-icons/why-nix.png" alt="Why NIX" width={250} height={250}
+            className={styles.menuItemImage} />
             <p>Why NIX</p>
           </Link>
           <Link href="/meetTheTeam" className={styles.menuItem}>
-            <div className={styles.menuItemImage}>
-              <Image src="/Images/menu-icons/meet-the-team.png" alt="Meet the Team" width={250} height={250} />
-            </div>
+            <Image src="/Images/menu-icons/meet-the-team.png" alt="Meet the Team" width={250} height={250}
+            className={styles.menuItemImage} />
             <p>Meet the Team</p>
           </Link>
           <Link href="/faq" className={styles.menuItem}>
-            <div className={styles.menuItemImage}>
-              <Image src="/Images/menu-icons/faq.png" alt="FAQs" width={250} height={250} />
-            </div>
+            <Image src="/Images/menu-icons/faq.png" alt="FAQs" width={250} height={250} 
+            className={styles.menuItemImage}/>
             <p>FAQs</p>
           </Link>
         </div>
@@ -50,5 +46,6 @@ const Menu: React.FC = () => {
     </div>
   );
 };
+
 
 export default Menu;

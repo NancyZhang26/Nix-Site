@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const whyNix: React.FC = () => {
     return (
-        <div className={styles.cintainer}>
+        <div className={styles.container}>
             <Head>
                 <title>NIX - Why NIX</title>
                 <meta name="description" content="Why Do People Choose NIX?"/>
@@ -18,7 +18,6 @@ const whyNix: React.FC = () => {
                 <div className={styles.whyNix}>Why NIX?</div>
 
                 <div className={styles.middleSection}>
-
                     <div className={styles.leftSection}>
                         <div className={styles.frame}><div className={styles.text}>#NIX Logo</div></div>
                         <Link href="/conditionalPomodoro">
