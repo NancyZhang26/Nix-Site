@@ -52,6 +52,7 @@
     font-weight: 400;
     line-height: normal;
     max-width: 100%;
+    opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     animation-delay: 0s;
 }
@@ -60,6 +61,7 @@
     display: flex;
     justify-content: center;
     flex: 1;
+    opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     animation-delay: 0.3s;
 }
@@ -109,8 +111,10 @@
     width: 12% !important;
     height: aut0;
     min-width: 100px;
+    opacity: 0;
     animation: fadeIn 1s ease-in forwards;
-    margin: 7% 0%;
+    animation-delay: 0.6s;
+    margin: 5% 0%;
 }
   
 .arrowWrapper {
