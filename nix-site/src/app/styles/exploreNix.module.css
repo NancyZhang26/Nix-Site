@@ -33,7 +33,7 @@
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-text-stroke-width: 1;
       -webkit-text-stroke-color: #A4CFAD;
-      font-family: "Roboto Mono";
+      font-family: "Bungee";
       font-size: calc(1.5rem + 2vw); /* Responsive font size */
       font-style: normal;
       font-weight: 400;
@@ -90,8 +90,8 @@
   
   .backButton {
       padding: 15px 20px;
-      font-size: calc(1rem + 0.5vw); /* Responsive font size */
-      font-family: Nunito, var(--default-font-family);
+      font-size: calc(1rem + 0.7vw); /* Responsive font size */
+      font-family: Montserrat, var(--default-font-family);
       color: #fff;
       background-color: rgba(164, 207, 173, 0.67);
       border: none;
@@ -123,7 +123,7 @@
       .main {
           flex-direction: row;
           align-items: center;
-          padding: 10%;
+          padding: 3% 10%;
       }
   
       .leftSection, .rightSection {

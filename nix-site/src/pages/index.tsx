@@ -26,7 +26,7 @@ const index: React.FC = () => {
               Dive into the time-saving magic of NIX, <br />your college companion extraordinaire!
             </span>
             <div className={styles.division}>
-              <Link href="/getStarted">
+              <Link href="/getStartedNew">
                 <button className={styles.button}>GET STARTED</button>
               </Link>
               <Link href="/signUp">

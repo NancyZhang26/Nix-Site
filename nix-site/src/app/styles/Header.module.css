@@ -23,7 +23,7 @@
 .nixLogo {
   cursor: pointer;
   color: #000000;
-  font-family: Nunito, var(--default-font-family);
+  font-family: Montserrat, var(--default-font-family);
   font-size: 20px;
   font-weight: 400;
   background: transparent;
@@ -39,7 +39,7 @@
 
 .signUp, .contact, .home, .menu {
   color: #000000;
-  font-family: Nunito, var(--default-font-family);
+  font-family: Montserrat, var(--default-font-family);
   font-size: 20px;
   font-weight: 400;
   white-space: nowrap;

@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 5%;
 }
 
 .title, .menuItem, .backButton {
@@ -38,7 +38,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #9FC4E8;
-    font-family: "Roboto Mono";
+    font-family: "Bungee";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -62,7 +62,7 @@
     text-align: center;
     flex: 1 1 25%; /* Flex grow and shrink with a base width */
     max-width: 250px; /* Maximum width for larger screens */
-    animation-delay: 0.6s; /* Delay for staggered effect */
+    animation-delay: 0.3s; /* Delay for staggered effect */
 }
 
 .menuItemImage {
@@ -83,7 +83,7 @@
 .menuItem p {
     color: #000;
     text-align: center;
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: calc(1rem + 0.5vw);
     font-style: normal;
     font-weight: 400;
@@ -100,7 +100,7 @@
     cursor: pointer;
     font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
     margin-top: 40px;
-    font-family: Nunito;
+    font-family: Montserrat;
     text-align: center;
     transition: background-color 0.3s;
     stroke-width: 1px;
@@ -110,7 +110,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    animation-delay: 0.9s; /* Delay for staggered effect */
+    animation-delay: 0.6s; /* Delay for staggered effect */
 }
 
 .backButton:hover {
@@ -134,7 +134,7 @@
 /* Small screens (large smartphones) */
 @media (max-width: 768px) {
     .main {
-        padding: 100px;
+        padding: 5%;
     }
 
     .title {
@@ -168,7 +168,7 @@
 /* Extra small screens (small smartphones) */
 @media (max-width: 600px) {
     .main {
-        padding: 10% 5%;
+        padding: 10% 15%;
     }
     
     .title {
@@ -209,7 +209,7 @@
     .menuItem p {
         color: #000;
         text-align: left;
-        font-family: Nunito;
+        font-family: Montserrat;
         font-size: calc(1rem + 0.9vw);
         font-style: normal;
         font-weight: 400;

@@ -66,7 +66,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #9FC4E8;
-    font-family: "Roboto Mono";
+    font-family: "Bungee";
     font-size: calc(2rem + 2vw); /* Responsive font size */
     font-style: normal;
     font-weight: 400;
@@ -84,7 +84,7 @@
   
   .text {
     color: #000;
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: calc(1rem + 0.5vw); /* Responsive font size */
     font-style: normal;
     font-weight: 400;
@@ -142,7 +142,7 @@
     stroke-width: 1px;
     stroke: #9FC4E8;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    font-family: Nunito;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

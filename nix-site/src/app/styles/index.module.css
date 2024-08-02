@@ -20,9 +20,10 @@
 .main {
   flex: 1;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 30px 150px;
+  padding: 5% 10%;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
@@ -31,7 +32,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5%; /* Padding for spacing */
+  padding: 0%; /* Padding for spacing */
 }
 
 .leftSection {
@@ -45,11 +46,12 @@
 .iphoneFrame, .better, .welcome, .text3, .button, .button2 {
   opacity: 0; /* Set initial opacity to 0 */
   animation: fadeIn 1s ease-in forwards;
-  animation-timeline: calc();
 }
 
 .iphoneFrame {
   animation-delay: 0s; /* Delay for staggered effect */
+  width: 75% !important;
+  height: auto;
 }
 
 .better {
@@ -81,7 +83,7 @@
 
 .better {
   color: #9fc4e8;
-  font-family: 'Roboto Mono', var(--default-font-family);
+  font-family: 'Bungee', var(--default-font-family);
   font-size: 60px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -91,7 +93,7 @@
 
 .welcome {
   color: #9fc4e8;
-  font-family: 'Roboto Mono', var(--default-font-family);
+  font-family: 'Bungee', var(--default-font-family);
   font-size: 60px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -101,7 +103,7 @@
 
 .text3 {
   color: #000000;
-  font-family: 'Nunito', var(--default-font-family);
+  font-family: 'Montserrat', var(--default-font-family);
   font-size: 25px;
   font-weight: 200;
   margin-top: 10px;
@@ -122,7 +124,7 @@
   border: none;
   cursor: pointer;
   font-size: 23px;
-  font-family: 'Nunito', var(--default-font-family);
+  font-family: 'Montserrat', var(--default-font-family);
   text-align: center;
   transition: background-color 0.3s;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -183,7 +185,7 @@
 }
 
 /* Small screens (large smartphones) */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .leftSection, .rightSection {
     max-width: 100%; /* Full width on small screens */
   }
@@ -204,6 +206,15 @@
 
   .division {
     justify-content: center;
+  }
+
+  .iphoneFrame {
+    width: 50% !important;
+    height: auto;
+  }
+
+  .leftSection, .rightSection {
+    padding: 10px; /* Adjust padding for better spacing on small screens */
   }
 }
 
