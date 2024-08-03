@@ -49,8 +49,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
-    width: 90%;
+    align-items: center;
+    margin-bottom: 2%;
+    width: 100%;
     height: auto;
     animation-delay: 0.3s;
   }
@@ -62,7 +63,6 @@
     margin: 5%;
     text-align: center;
     flex: 1 1 25%; /* Flex grow and shrink with a base width */
-    max-width: 250px; /* Maximum width for larger screens */
   }
   
   .itemImage {
@@ -76,7 +76,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    max-width: 225px;
     min-width: 80px;
   }
   
@@ -116,21 +115,7 @@
     background-color: #2e4472;
   }
   
-  /* Large screens (desktops) */
-  @media (min-width: 1024px) {
-    .items {
-      justify-content: space-around; /* Spread out items evenly */
-    }
-  }
-  
-  /* Medium screens (tablets) */
-  @media (max-width: 1024px) {
-    .items {
-      justify-content: space-around; /* Spread out items evenly */
-    }
-  }
-  
-  /* Small screens (large smartphones) */
+/* Small screens (large smartphones) */
   @media (max-width: 768px) {
     .main {
       padding: 10%;
@@ -149,7 +134,7 @@
     .item {
       flex-direction: row; /* Arrange items in a row */
       align-items: left; /* Center items vertically */
-      max-width: 100%; /* Allow full width for small screens */
+      width: 100%; /* Allow full width for small screens */
       margin-bottom: 10px; /* Reduce spacing between items */
     }
   

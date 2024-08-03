@@ -99,7 +99,6 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
-    margin-top: 40px;
     font-family: Montserrat;
     text-align: center;
     transition: background-color 0.3s;
@@ -134,7 +133,7 @@
 /* Small screens (large smartphones) */
 @media (max-width: 768px) {
     .main {
-        padding: 5%;
+        padding: 15%;
     }
 
     .title {
@@ -168,7 +167,7 @@
 /* Extra small screens (small smartphones) */
 @media (max-width: 600px) {
     .main {
-        padding: 10% 15%;
+        padding: 10% 5%;
     }
     
     .title {
@@ -180,7 +179,7 @@
         flex-direction: column;
         justify-content: space-around;
         margin-bottom: 40px;
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
       
@@ -190,7 +189,6 @@
         margin: 5%;
         text-align: center;
         flex: 1 1 25%; /* Flex grow and shrink with a base width */
-        max-width: 250px; /* Maximum width for larger screens */
     }
       
     .menuItemImage {
